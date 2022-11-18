@@ -25,3 +25,5 @@
 
   - how to view the project running in the container (open a browser...go to ip and port...)
     - To view the project running in the container, go to a browser like Firefox and in the search bar, enter the public ip followed by the port the project is bound to, in this case, 3.234.135.188:8080
+    
+    ![project running](https://user-images.githubusercontent.com/84351411/202752570-1ffd1b91-b235-4152-94cb-78af6dbaed11.png)
