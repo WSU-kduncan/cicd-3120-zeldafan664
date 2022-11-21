@@ -27,3 +27,11 @@
     - To view the project running in the container, go to a browser like Firefox and in the search bar, enter the public ip followed by the port the project is bound to, in this case, 3.234.135.188:8080
     
     ![project running](https://user-images.githubusercontent.com/84351411/202752570-1ffd1b91-b235-4152-94cb-78af6dbaed11.png)
+## Part 2 - GitHub Actions and DockerHub
+### Documentation
+  - Process to create public repo in DockerHub: After creating your account, simply go to create repository, give it a name and description, then submit. 
+  - To authenticate in DockerHub CLI, you will need your username and an access token created on DockerHub, with permissions to read and write. In your terminal, use the comman "sudo docker login - u "type-your-username" and hit enter. When prompted for the password, paste in your freshly created Docker Token. 
+  - To push a container to DockerHub (assuming you have one created locally) use the command "sudo docker push docker tag local-image:tagname new-repo:tagname
+  - GitHub Secrets: the secrets that were set were DOCKER_USERNAME and DOCKER_TOKEN. 
+  - The workflow sets up the job, sets up the QEMU, sets up Docker Buildx, Lists Contents, Login to DockerHub, Build and Push, Post Login to Docker Hub, Post Set up Docker Buildx, Complete Job 
+  - If someone else were going to use my project, then they would need an access token of their own. 
