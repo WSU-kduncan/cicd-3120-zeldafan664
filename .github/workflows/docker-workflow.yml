@@ -14,7 +14,7 @@ on:
 # variables used in this workflow
 env:
   # variable holding my repo folder name (using DockerHub is assumed)
-  DOCKER_HUB_REPO: project5site
+  DOCKER_HUB_REPO: p5website
 # jobs - each jobs runs on a runner - parralel by deafult, can be dependent based on id
 #     https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobs
 jobs:
@@ -54,6 +54,7 @@ jobs:
         id: docker_build 
         uses: docker/build-push-action@v2
         with:
+          file: /home/ubuntu/cicd-3120-zeldafan664/Project5/website/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_HUB_REPO }}:latest
           # Example getting fancy with tags: 
