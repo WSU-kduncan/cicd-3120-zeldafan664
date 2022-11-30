@@ -54,7 +54,7 @@ jobs:
         id: docker_build 
         uses: docker/build-push-action@v2
         with:
-          file: /home/ubuntu/cicd-3120-zeldafan664/Project5/website/Dockerfile
+          file: cicd-3120-zeldafan664/Project5/website/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_HUB_REPO }}:latest
           # Example getting fancy with tags: 
