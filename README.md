@@ -1,5 +1,8 @@
-## Part 1 - Dockerize it
-![p5diagram drawio](https://user-images.githubusercontent.com/84351411/205162281-9c4ce5a4-8b43-4135-b1ca-bc22131fc072.png)
+
+![p5di drawio](https://user-images.githubusercontent.com/84351411/205162845-9989ab07-2a4f-4d00-ba5e-37e9d0ef4146.png)
+
+## Part 1- Dockerize
+
 
 
 ### Documentation
