@@ -25,8 +25,10 @@
 
   - how to view the project running in the container (open a browser...go to ip and port...)
     - To view the project running in the container, go to a browser like Firefox and in the search bar, enter the public ip followed by the port the project is bound to, in this case, 3.234.135.188:8080
+    ![working](https://user-images.githubusercontent.com/84351411/205159251-0d73e474-3b27-481b-a420-0725a41b0206.png)
+![jsworking](https://user-images.githubusercontent.com/84351411/205159263-777b0323-6567-4eee-b29e-8f719671406a.png)
+
     
-    ![project running](https://user-images.githubusercontent.com/84351411/202752570-1ffd1b91-b235-4152-94cb-78af6dbaed11.png)
 ## Part 2 - GitHub Actions and DockerHub
 ### Documentation
   - Process to create public repo in DockerHub: After creating your account, simply go to create repository, give it a name and description, then submit. 
