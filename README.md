@@ -1,4 +1,6 @@
 ## Part 1 - Dockerize it
+![p5diagram drawio](https://user-images.githubusercontent.com/84351411/205162281-9c4ce5a4-8b43-4135-b1ca-bc22131fc072.png)
+
 
 ### Documentation
 - Project Overview
