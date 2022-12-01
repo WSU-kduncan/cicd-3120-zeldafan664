@@ -35,3 +35,27 @@
   - GitHub Secrets: the secrets that were set were DOCKER_USERNAME and DOCKER_TOKEN. 
   - The workflow sets up the job, sets up the QEMU, sets up Docker Buildx, Lists Contents, Login to DockerHub, Build and Push, Post Login to Docker Hub, Post Set up Docker Buildx, Complete Job 
   - If someone else were going to use my project, then they would need an access token of their own. 
+## Part 3 - Deployment
+
+### Documentation
+  - Description of container restart script: (Included the script in main if you want to look at that as well)
+    - pulls the latest version of the image from my dockerhub repository
+    - Removes the unused images with prune 
+    - stops and removes the container
+    - Recreates and runs the container
+  
+  - Setting up the webhook: 
+    - Sudo apt-get install hook
+    - make the webhook task file 
+    - webhook -hooks p5hook.json -verbose
+    - Webhook File Stuff: 
+      - creates an ID called ENDPOINT-NAME
+      - Executes the refresh script from the defined working directory
+      - Trigger rules set value and tokens to use when creating the DockerHub hook
+  - Creating notifier on DockerHub:
+    - In your repo, click the Webhooks tab
+    - Give it a name!
+    - For the Webhook URL, use something like http://InstanceIP:9000/id?TARGET_PARAMETER=TARGET_TOKEN
+    - (in my case): http://3.234.135.188:9000/hooks/id?p5_param=P5_TOKEN
+   
+ 
