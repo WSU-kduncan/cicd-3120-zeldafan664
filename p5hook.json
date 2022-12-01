@@ -1,0 +1,21 @@
+[
+    { 
+      "id": "ENDPOINT-NAME",
+      "execute-command": "./refresh.sh",
+      "command-working-directory": "/home/ubuntu/scripts",
+      "response-message": "Executing redeploy p5website container",
+      "trigger-rule":
+      {
+        "match":
+        {
+          "type": "value",
+          "value": "P5_TOKEN",
+          "parameter":
+          {
+            "source": "url",
+            "name": "p5_param"
+          }
+        }
+      }
+    }
+]
