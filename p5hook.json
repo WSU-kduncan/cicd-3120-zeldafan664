@@ -2,7 +2,7 @@
     { 
       "id": "ENDPOINT-NAME",
       "execute-command": "./refresh.sh",
-      "command-working-directory": "/home/ubuntu/scripts",
+      "command-working-directory": "/cicd-3120-zeldafan664/scripts",
       "response-message": "Executing redeploy p5website container",
       "trigger-rule":
       {
