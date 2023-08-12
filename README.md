@@ -10,7 +10,7 @@
   - The project will host a simple website built in html with some css for styling and javascript functionality. 
 - Run Project Locally
   - I installed Docker in one of my previously built instances. 
-    - First, I made sure to uninstall and old versions that I mgiht have been messing around with just to start with a clean slate 
+    - First, I made sure to uninstall and old versions that I might have been messing around with just to start with a clean slate 
     -  sudo apt-get remove docker docker-engine docker.io containerd runc
     - Next, I setup the repository with: 
         - sudo apt-get install \
